@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_X">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_16">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -78,5 +78,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpcore:4.4.16" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-codec:commons-codec:1.16.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:jcl-over-slf4j:1.7.36" level="project" />
+    <orderEntry type="library" name="Maven: com.comphenix.protocol:ProtocolLib:5.2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: net.bytebuddy:byte-buddy:1.14.9" level="project" />
   </component>
 </module>
