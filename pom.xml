@@ -10,7 +10,7 @@
 
     <groupId>com.ingravestudios</groupId>
     <artifactId>GlimmerAPI</artifactId>
-    <version>1.0.2</version>
+    <version>1.1.0-SNAPSHOT</version>
 
     <licenses>
         <license>
@@ -32,6 +32,17 @@
         <developerConnection>scm:git:ssh://github.com:ethermoor/glimmerwiki.git</developerConnection>
         <url>http://github.com/ethermoor/glimmerwiki/tree/master</url>
     </scm>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <directory>./target</directory>
@@ -78,16 +89,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.central</groupId>
-                <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.4.0</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <publishingServerId>central</publishingServerId>
-                    <tokenAuth>true</tokenAuth>
-                </configuration>
             </plugin>
         </plugins>
     </build>
