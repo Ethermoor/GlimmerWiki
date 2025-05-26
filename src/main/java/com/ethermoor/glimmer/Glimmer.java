@@ -2,6 +2,7 @@ package com.ethermoor.glimmer;
 
 import com.ethermoor.glimmer.blueprint.GlimmerBlueprint;
 import org.bukkit.Location;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 
 import java.util.List;
@@ -25,7 +26,7 @@ public interface Glimmer {
             return bp;
         }
 
-        public abstract Glimmer build(List<Player> observers, Location origin, Location location);
+        public abstract Glimmer build(List<Player> observers, Location origin, Location location, Entity relativeEntity);
     }
 
 
